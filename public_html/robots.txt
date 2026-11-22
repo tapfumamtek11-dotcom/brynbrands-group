@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brynbrands.com/sitemap.xml
+Sitemap: https://brynbrands-group-six.vercel.app/sitemap.xml
