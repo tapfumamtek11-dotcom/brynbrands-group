@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — BrynBrands Exhibition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- BrynBrands Official Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <style id="websmith-colophon-styles">
+/* === ARTISTIC WEBSMITH STUDIO COLOPHON === */
+.websmith-colophon {
+    width: 100%;
+    padding: 28px 20px 18px;
+    margin-top: 28px;
+    border-top: 1px solid rgba(201, 169, 110, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+.websmith-colophon--floating {
+    margin-top: 0;
+    border-top: none;
+    background: linear-gradient(180deg, transparent 0%, rgba(8, 8, 9, 0.92) 100%);
+    padding: 24px 20px 28px;
+}
+.websmith-colophon__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 22px 10px 14px;
+    border-radius: 999px;
+    background: linear-gradient(145deg, rgba(20, 20, 26, 0.92) 0%, rgba(10, 10, 14, 0.96) 100%);
+    border: 1px solid rgba(201, 169, 110, 0.28);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    text-decoration: none !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+.websmith-colophon__pill::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(201, 169, 110, 0.18), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+.websmith-colophon__pill:hover {
+    transform: translateY(-2px);
+    border-color: rgba(223, 192, 138, 0.62);
+    box-shadow:
+        0 14px 34px rgba(0, 0, 0, 0.72),
+        0 0 24px rgba(201, 169, 110, 0.2),
+        inset 0 1px 0 rgba(255, 240, 204, 0.22);
+}
+.websmith-colophon__pill:hover::before {
+    opacity: 1;
+}
+.websmith-colophon__emblem {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #1F1F29, #0B0B0F);
+    border: 1px solid rgba(201, 169, 110, 0.42);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.12);
+}
+.websmith-colophon__emblem svg {
+    width: 17px;
+    height: 11px;
+    display: block;
+}
+.websmith-colophon__copy {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.25;
+}
+.websmith-colophon__eyebrow {
+    font-family: 'Space Mono', 'Inter', ui-monospace, monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(201, 169, 110, 0.85);
+}
+.websmith-colophon__brand {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-size: 15.5px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: #F4F4F6;
+}
+.websmith-colophon__brand em {
+    font-style: italic;
+    color: #DFC08A;
+    font-weight: 600;
+}
+.websmith-colophon__spark {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C9A96E;
+    box-shadow: 0 0 10px #C9A96E;
+    margin-left: 2px;
+    flex-shrink: 0;
+}
+</style>
+
+    <!-- Vercel Web Analytics & Speed Insights -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</head>
+<body class="obsidian">
+    <div id="magic-cursor"></div>
+    <div id="magic-cursor-dot"></div>
+    <div class="page-curtain"></div>
+
+    <div class="menu-overlay">
+        <ul class="menu-links">
+            <li><a href="index.html" class="menu-link">Home</a></li>
+            <li><a href="biography.html" class="menu-link">The Artist</a></li>
+            <li><a href="portfolio.html" class="menu-link">The Empire</a></li>
+            <li><a href="contact.html" class="menu-link">Consultation</a></li>
+            <li><a href="../index.html" class="menu-link" style="color:var(--accent)">Corporate Portal</a></li>
+        </ul>
+    </div>
+
+    <nav class="editorial-nav">
+        <div class="nav-brand">MTEKI</div>
+        <div class="nav-toggle">
+            <span class="dot"></span>
+            <span class="label">MENU</span>
+        </div>
+    </nav>
+
+    <main class="exhibition-grid-view">
+        <header class="portfolio-header">
+            <h1 class="chapter-title reveal">The <em>Substance</em> Grid</h1>
+            <div class="filter-controls reveal">
+                <button class="filter-btn active" data-filter="all">Unified View</button>
+                <button class="filter-btn" data-filter="art">Stone Works</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            </div>
+        </header>
+
+        <div class="unified-grid">
+            <!-- Art Piece 1 -->
+            <div class="grid-card art reveal" data-category="art">
+                <div class="card-visual">
+                    <img src="assets/stoneeee.png" alt="Sculpture">
+                </div>
+                <div class="card-meta">
+                    <span class="type">SEKURUTAU</span>
+                    <h3 class="title">The Guardian</h3>
+                </div>
+            </div>
+
+            <!-- Business Piece 1 -->
+            <div class="grid-card enterprise reveal" data-category="enterprise">
+                <div class="card-visual">
+                    <div class="placeholder-graphic">MVURA</div>
+                </div>
+                <div class="card-meta">
+                    <span class="type">BRYNBRANDS</span>
+                    <h3 class="title">Mvura Water</h3>
+                </div>
+            </div>
+
+            <!-- Art Piece 2 -->
+            <div class="grid-card art reveal" data-category="art">
+                <div class="card-visual">
+                    <img src="../gallery/images/bird.png" alt="Chippi">
+                </div>
+                <div class="card-meta">
+                    <span class="type">NATIONAL</span>
+                    <h3 class="title">Chippi Mascot</h3>
+                </div>
+            </div>
+        </div>
+    
+            <!-- Artistic Studio Signature Colophon -->
+            <div class="websmith-colophon websmith-colophon--floating">
+                <a href="https://websmith-studio.vercel.app" target="_blank" rel="noopener noreferrer" class="websmith-colophon__pill" aria-label="Digital Architecture Crafted by Websmith Studio">
+                    <span class="websmith-colophon__emblem" aria-hidden="true">
+                        <svg viewBox="120 330 480 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon fill="#F4F4F6" points="137,355 209,355 308,498 329,470 353,502 294,582"/>
+                            <polygon fill="#D8D8E0" points="265,355 337,355 454,522 419,577"/>
+                            <polygon fill="#C9A96E" points="515,345 585,345 462,512 429,464"/>
+                        </svg>
+                    </span>
+                    <span class="websmith-colophon__copy">
+                        <span class="websmith-colophon__eyebrow">Digital Architecture &bull; Crafted By</span>
+                        <span class="websmith-colophon__brand">Websmith <em>Studio</em></span>
+                    </span>
+                    <span class="websmith-colophon__spark" aria-hidden="true"></span>
+                </a>
+            </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Inline Portfolio Logic
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                document.querySelectorAll('.grid-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

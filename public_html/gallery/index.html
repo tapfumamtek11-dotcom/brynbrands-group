@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekurutau Gallery — Dr Hon Bryn Taurai Mteki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Space+Mono:wght@400;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- BrynBrands Official Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <style id="websmith-colophon-styles">
+/* === ARTISTIC WEBSMITH STUDIO COLOPHON === */
+.websmith-colophon {
+    width: 100%;
+    padding: 28px 20px 18px;
+    margin-top: 28px;
+    border-top: 1px solid rgba(201, 169, 110, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+.websmith-colophon--floating {
+    margin-top: 0;
+    border-top: none;
+    background: linear-gradient(180deg, transparent 0%, rgba(8, 8, 9, 0.92) 100%);
+    padding: 24px 20px 28px;
+}
+.websmith-colophon__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 22px 10px 14px;
+    border-radius: 999px;
+    background: linear-gradient(145deg, rgba(20, 20, 26, 0.92) 0%, rgba(10, 10, 14, 0.96) 100%);
+    border: 1px solid rgba(201, 169, 110, 0.28);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    text-decoration: none !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+.websmith-colophon__pill::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(201, 169, 110, 0.18), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+.websmith-colophon__pill:hover {
+    transform: translateY(-2px);
+    border-color: rgba(223, 192, 138, 0.62);
+    box-shadow:
+        0 14px 34px rgba(0, 0, 0, 0.72),
+        0 0 24px rgba(201, 169, 110, 0.2),
+        inset 0 1px 0 rgba(255, 240, 204, 0.22);
+}
+.websmith-colophon__pill:hover::before {
+    opacity: 1;
+}
+.websmith-colophon__emblem {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #1F1F29, #0B0B0F);
+    border: 1px solid rgba(201, 169, 110, 0.42);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.12);
+}
+.websmith-colophon__emblem svg {
+    width: 17px;
+    height: 11px;
+    display: block;
+}
+.websmith-colophon__copy {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.25;
+}
+.websmith-colophon__eyebrow {
+    font-family: 'Space Mono', 'Inter', ui-monospace, monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(201, 169, 110, 0.85);
+}
+.websmith-colophon__brand {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-size: 15.5px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: #F4F4F6;
+}
+.websmith-colophon__brand em {
+    font-style: italic;
+    color: #DFC08A;
+    font-weight: 600;
+}
+.websmith-colophon__spark {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C9A96E;
+    box-shadow: 0 0 10px #C9A96E;
+    margin-left: 2px;
+    flex-shrink: 0;
+}
+</style>
+
+    <!-- Vercel Web Analytics & Speed Insights -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Background Shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo"><img src="../jonh.jpg" alt="BrynBrands" style="height: 28px; width: auto; vertical-align: middle; margin-right: 8px; border-radius: 4px;">Sekurutau Gallery</a>
+            <ul class="nav-links">
+                <li><a href="../index.html" data-text="Home"><span>Home</span></a></li>
+                <li><a href="../music/index.html" data-text="Music"><span>Music</span></a></li>
+                <li><a href="#artist" data-text="Artist"><span>Artist</span></a></li>
+                <li><a href="#collection" data-text="Collection"><span>Collection</span></a></li>
+                <li><a href="#masterworks" data-text="Masterworks"><span>Masterworks</span></a></li>
+                <li><a href="#exhibitions" data-text="Recognition"><span>Recognition</span></a></li>
+                <li><a href="#acquire" data-text="Acquire"><span>Acquire</span></a></li>
+                <li><a href="#contact" data-text="Contact"><span>Contact</span></a></li>
+            </ul>
+            <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="menuClose" aria-label="Close menu"></button>
+        <ul class="mobile-menu-links">
+            <li><a href="../index.html" style="transition-delay: 0.05s">Home</a></li>
+            <li><a href="../music/index.html" style="transition-delay: 0.08s">Music</a></li>
+            <li><a href="#artist" style="transition-delay: 0.1s">Artist</a></li>
+            <li><a href="#collection" style="transition-delay: 0.15s">Collection</a></li>
+            <li><a href="#masterworks" style="transition-delay: 0.2s">Masterworks</a></li>
+            <li><a href="#exhibitions" style="transition-delay: 0.25s">Recognition</a></li>
+            <li><a href="#acquire" style="transition-delay: 0.3s">Acquire</a></li>
+            <li><a href="#contact" style="transition-delay: 0.35s">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-overline"><span>Dr Hon Bryn Taurai Mteki Gallery — Harare, Zimbabwe — Est. 1992</span></p>
+                <h1 class="hero-title">
+                    <span class="line"><span class="word">Stone</span></span>
+                    <span class="line"><span class="word">speaks</span></span>
+                    <span class="line"><span class="word">through <em>spirit</em></span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    For over three decades, Dr Hon Bryn Taurai Mteki has carved the soul of Africa into serpentine and springstone—works that transcend borders and speak to the eternal human condition.
+                </p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-sculpture">
+                    <img src="images/cat.png" class="hero-sculpture-inner" alt="The Ancestor">
+                    <p class="hero-sculpture-label">The Ancestor — 2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Artist Section -->
+    <section class="artist-section" id="artist">
+        <div class="section">
+            <div class="artist-grid">
+                <div class="artist-image-container reveal">
+                    <div class="artist-image-wrapper">
+                        <img src="images/stoneeee.png" class="artist-image" alt="Dr Hon Bryn Taurai Mteki">
+                        <div class="artist-frame"></div>
+                    </div>
+                    <p class="artist-image-tag">Harare, Zimbabwe</p>
+                </div>
+                <div class="artist-content">
+                    <div class="section-header reveal">
+                        <div class="section-number">01</div>
+                        <div class="section-header-text">
+                            <p class="section-overline">The Artist</p>
+                            <h2 class="section-title">Bryn Taurai <em>Mteki</em></h2>
+                        </div>
+                    </div>
+                    <blockquote class="artist-quote reveal">
+                        The stone already contains the spirit. My hands simply reveal what has always been there.
+                    </blockquote>
+                    <p class="artist-bio reveal">
+                        Known by his artistic name Sekurutau-Dr Hon Bryn Taurai Mteki stands as one of Zimbabwe's most distinguished sculptors. A second-generation master, he inherited not merely technique but a profound philosophical approach to stone.
+                    </p>
+                    <p class="artist-bio reveal">
+                        Born in 1975 in Harare, Zimbabwe, Mteki began carving at the age of 11 under the guidance of his father, renowned sculptor Richard Mteki.
+                    </p>
+                    <p class="artist-bio reveal">
+                        Since his first international exhibition in 1992, Mteki's work has graced galleries and private collections across four continents. His sculptures—carved primarily from serpentine, springstone, and opal stone—explore themes of leadership, love, spiritual transcendence, and the contemporary African experience.
+                    </p>
+                    <div class="artist-stats reveal">
+                        <div class="stat">
+                            <div class="stat-number">33+</div>
+                            <div class="stat-label">Years Creating</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">400+</div>
+                            <div class="stat-label">Works Created</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">27</div>
+                            <div class="stat-label">Countries Exhibited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="marquee-text">Spirit</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Leadership</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Love</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Philosophy</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Dialogue</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Heritage</span>
+                <span class="marquee-dot"></span>
+            </div>
+            <div class="marquee-content">
+                <span class="marquee-text">Spirit</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Leadership</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Love</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Philosophy</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Dialogue</span>
+                <span class="marquee-dot"></span>
+                <span class="marquee-text">Heritage</span>
+                <span class="marquee-dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collection Section -->
+    <section class="section" id="collection">
+        <div class="section-header reveal">
+            <div class="section-number">02</div>
+            <div class="section-header-text">
+                <p class="section-overline">The Collection</p>
+                <h2 class="section-title">Selected <em>Works</em></h2>
+            </div>
+        </div>
+
+        <div class="collection-filter reveal">
+            <button class="filter-btn active" data-filter="all">All Works</button>
+            <button class="filter-btn" data-filter="available">Available</button>
+            <button class="filter-btn" data-filter="sold">Sold</button>
+            <button class="filter-btn" data-filter="commission">Commission</button>
+        </div>
+
+        <div class="collection-grid" id="collectionGrid">
+            <!-- Artworks populated by JS -->
+        </div>
+    </section>
+
+    <!-- Masterworks Section -->
+    <section class="masterworks-section" id="masterworks">
+        <div class="section">
+            <div class="section-header reveal">
+                <div class="section-number">03</div>
+                <div class="section-header-text">
+                    <p class="section-overline">Masterworks</p>
+                    <h2 class="section-title">Public Commissions</h2>
+                </div>
+            </div>
+
+            <div class="masterwork-feature reveal">
+                <div class="masterwork-image-container">
+                    <img src="images/bird.png" class="masterwork-image" alt="Chippi">
+                    <span class="masterwork-year">'95</span>
+                </div>
+                <div class="masterwork-content">
+                    <p class="masterwork-category">National Commission</p>
+                    <h3 class="masterwork-title">Chippi</h3>
+                    <p class="masterwork-description">
+                        Commissioned to represent Zimbabwe on the continental stage, this monumental work captured the spirit of Pan-African unity and athletic excellence. The sculpture embodied the nation's pride.
+                    </p>
+                    <div class="masterwork-details">
+                        <div class="detail-item">
+                            <p class="detail-label">Material</p>
+                            <p class="detail-value">Serpentine Stone</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Height</p>
+                            <p class="detail-value">2.4 metres</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Location</p>
+                            <p class="detail-value">Harare, Zimbabwe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masterwork-feature reveal">
+                <div class="masterwork-image-container">
+                    <img src="images/rock.png" class="masterwork-image" alt="The Guardian Spirit">
+                    <span class="masterwork-year">'08</span>
+                </div>
+                <div class="masterwork-content">
+                    <p class="masterwork-category">Institutional Collection</p>
+                    <h3 class="masterwork-title">The Guardian Spirit</h3>
+                    <p class="masterwork-description">
+                        A centerpiece of the National Gallery of Zimbabwe, this work represents the culmination of Mteki's exploration of ancestral protection and spiritual guardianship.
+                    </p>
+                    <div class="masterwork-details">
+                        <div class="detail-item">
+                            <p class="detail-label">Material</p>
+                            <p class="detail-value">Black Springstone</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Height</p>
+                            <p class="detail-value">1.8 metres</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Collection</p>
+                            <p class="detail-value">National Gallery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section class="section" id="exhibitions">
+        <div class="section-header reveal">
+            <div class="section-number">04</div>
+            <div class="section-header-text">
+                <p class="section-overline">Recognition</p>
+                <h2 class="section-title">Exhibitions &amp; <em>Honours</em></h2>
+            </div>
+        </div>
+
+        <div class="exhibitions-grid">
+            <div class="exhibition-item reveal reveal-delay-1">
+                <p class="exhibition-year">2018</p>
+                <p class="exhibition-title">Liebe in Stein</p>
+                <p class="exhibition-location">Adorf, Germany</p>
+            </div>
+            <div class="exhibition-item reveal reveal-delay-2">
+                <p class="exhibition-year">2017</p>
+                <p class="exhibition-title">World Art</p>
+                <p class="exhibition-location">Yves Peteers Galerie, Lier, Belgium</p>
+            </div>
+            <div class="exhibition-item reveal reveal-delay-1">
+                <p class="exhibition-year">2016</p>
+                <p class="exhibition-title">World Renowned</p>
+                <p class="exhibition-location">Hillcrest Baptist Church, Chicago, IL, USA</p>
+            </div>
+            <div class="exhibition-item reveal reveal-delay-2">
+                <p class="exhibition-year">2014</p>
+                <p class="exhibition-title">African Best</p>
+                <p class="exhibition-location">Nhaka Gallery, Chicago, IL, USA</p>
+            </div>
+            <div class="exhibition-item reveal reveal-delay-1">
+                <p class="exhibition-year">2012</p>
+                <p class="exhibition-title">Dr Hon Bryn Taurai Mteki</p>
+                <p class="exhibition-location">Memphis, Tennessee, USA</p>
+            </div>
+            <div class="exhibition-item reveal reveal-delay-2">
+                <p class="exhibition-year">1992</p>
+                <p class="exhibition-title">Zimbabwe Shona Sculpture</p>
+                <p class="exhibition-location">Oxford, United Kingdom</p>
+            </div>
+        </div>
+
+        <div class="awards-strip reveal">
+            <div class="award-card">
+                <p class="award-year">1997</p>
+                <p class="award-title">Silver Medal</p>
+                <p class="award-org">Oelsnitz, Germany</p>
+            </div>
+            <div class="award-card">
+                <p class="award-year">1997</p>
+                <p class="award-title">Silver Medal</p>
+                <p class="award-org">Auerbach, Germany</p>
+            </div>
+            <div class="award-card">
+                <p class="award-year">1997</p>
+                <p class="award-title">Silver Medal</p>
+                <p class="award-org">Adorf, Germany</p>
+            </div>
+            <div class="award-card">
+                <p class="award-year">1998</p>
+                <p class="award-title">Certificate of Exhibition</p>
+                <p class="award-org">Oelsnitz, Germany</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acquire Section -->
+    <section class="section acquire-section" id="acquire">
+        <div class="acquire-grid">
+            <div>
+                <div class="section-header reveal">
+                    <div class="section-number">05</div>
+                    <div class="section-header-text">
+                        <p class="section-overline">Acquire</p>
+                        <h2 class="section-title">Collecting &amp; <em>Commissions</em></h2>
+                    </div>
+                </div>
+                <p class="acquire-text reveal">
+                    Each Sekurutau sculpture represents months of meditative work—a dialogue between artist, stone, and spirit. Works are acquired through private consultation, ensuring collectors receive pieces that resonate with their personal journey.
+                </p>
+                <p class="acquire-text reveal">
+                    For collectors seeking a unique commission, Mteki accepts a limited number of bespoke projects annually. These collaborative works begin with deep conversation about meaning, space, and intention.
+                </p>
+                <button class="acquire-cta magnetic reveal" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    <span>Begin Conversation</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="acquire-process reveal">
+                <p class="process-title">The Acquisition Process</p>
+                <ul class="process-steps">
+                    <li class="process-step">
+                        <span class="step-number">i</span>
+                        <span class="step-text">Initial consultation to understand your vision and requirements</span>
+                    </li>
+                    <li class="process-step">
+                        <span class="step-number">ii</span>
+                        <span class="step-text">Private viewing at the gallery or digital presentation of available works</span>
+                    </li>
+                    <li class="process-step">
+                        <span class="step-number">iii</span>
+                        <span class="step-text">Provenance documentation and certificate of authenticity</span>
+                    </li>
+                    <li class="process-step">
+                        <span class="step-number">iv</span>
+                        <span class="step-text">White-glove international shipping with full insurance</span>
+                    </li>
+                    <li class="process-step">
+                        <span class="step-number">v</span>
+                        <span class="step-text">Installation guidance and ongoing collector relationship</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-header reveal">
+                        <div class="section-number">06</div>
+                        <div class="section-header-text">
+                            <p class="section-overline">Contact</p>
+                            <h2 class="section-title">Private <em>Viewing</em></h2>
+                        </div>
+                    </div>
+                    <p class="contact-intro reveal">
+                        We welcome collectors, curators, and admirers to experience the work in person. Private viewings may be arranged at our Harare gallery.
+                    </p>
+                    <div class="contact-detail reveal">
+                        <p class="contact-label">Gallery</p>
+                        <p class="contact-value">Sekurutau Gallery<br>Harare, Zimbabwe</p>
+                    </div>
+                    <div class="contact-detail reveal">
+                        <p class="contact-label">Website</p>
+                        <p class="contact-value">www.brynbrandsgroup.com</p>
+                    </div>
+                    <div class="contact-detail reveal">
+                        <p class="contact-label">Enquiries</p>
+                        <p class="contact-value">gallery@sekurutau.art</p>
+                    </div>
+                    <div class="contact-detail reveal">
+                        <p class="contact-label">Hours</p>
+                        <p class="contact-value">By appointment only</p>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal">
+                    <h3 class="form-title">Send an Enquiry</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Your name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="your@email.com" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="interest">Interest</label>
+                            <select id="interest" class="form-select">
+                                <option value="collection">Acquiring from collection</option>
+                                <option value="commission">Commissioning a work</option>
+                                <option value="viewing">Private viewing</option>
+                                <option value="exhibition">Exhibition enquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-textarea" placeholder="Tell us about your interest..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn magnetic">
+                            <span>Send Enquiry</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-logo">Sekurutau Gallery</p>
+            <p class="footer-text">© 2026 Dr. Hon. Bryn Taurai Mteki — All Rights Reserved</p>
+            <a href="slideshow.html" class="slideshow-button">View Slideshow</a>
+        </div>
+    
+            <!-- Artistic Studio Signature Colophon -->
+            <div class="websmith-colophon">
+                <a href="https://websmith-studio.vercel.app" target="_blank" rel="noopener noreferrer" class="websmith-colophon__pill" aria-label="Digital Architecture Crafted by Websmith Studio">
+                    <span class="websmith-colophon__emblem" aria-hidden="true">
+                        <svg viewBox="120 330 480 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon fill="#F4F4F6" points="137,355 209,355 308,498 329,470 353,502 294,582"/>
+                            <polygon fill="#D8D8E0" points="265,355 337,355 454,522 419,577"/>
+                            <polygon fill="#C9A96E" points="515,345 585,345 462,512 429,464"/>
+                        </svg>
+                    </span>
+                    <span class="websmith-colophon__copy">
+                        <span class="websmith-colophon__eyebrow">Digital Architecture &bull; Crafted By</span>
+                        <span class="websmith-colophon__brand">Websmith <em>Studio</em></span>
+                    </span>
+                    <span class="websmith-colophon__spark" aria-hidden="true"></span>
+                </a>
+            </div>
+
+    </footer>
+
+    <!-- Artwork Modal -->
+    <div class="modal-overlay" id="artworkModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal"></button>
+            <img class="modal-image" id="modalImage" alt="Artwork">
+            <div class="modal-info">
+                <span class="modal-status" id="modalStatus"></span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-year" id="modalYear"></p>
+                <p class="modal-description" id="modalDescription"></p>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <p class="modal-detail-label">Material</p>
+                        <p class="modal-detail-value" id="modalMaterial"></p>
+                    </div>
+                    <div class="modal-detail">
+                        <p class="modal-detail-label">Dimensions</p>
+                        <p class="modal-detail-value" id="modalDimensions"></p>
+                    </div>
+                    <div class="modal-detail">
+                        <p class="modal-detail-label">Weight</p>
+                        <p class="modal-detail-value" id="modalWeight"></p>
+                    </div>
+                    <div class="modal-detail">
+                        <p class="modal-detail-label">Provenance</p>
+                        <p class="modal-detail-value" id="modalProvenance"></p>
+                    </div>
+                </div>
+                <button class="modal-inquire" id="modalInquire">Enquire About This Work</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="alert-modal" id="alertModal">
+        <div class="alert-content">
+            <div class="alert-icon">✓</div>
+            <h3 class="alert-title" id="alertTitle">Thank You</h3>
+            <p class="alert-message" id="alertMessage">Your enquiry has been received. We will respond within 48 hours.</p>
+            <button class="alert-btn" id="alertClose">Continue</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+</body></html>

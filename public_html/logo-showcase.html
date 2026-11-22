@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrynBrands Group — Vector Graphic Oval & Logo Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yellow-brand: #F5C518;
+            --coral-red: #DC4E58;
+            --slate-gray: #4E575E;
+            --charcoal-wordmark: #454C43;
+            --bg-dark: #0f1115;
+            --card-dark: #181b22;
+            --border-dark: #272c38;
+            --text-main: #f0f3f8;
+            --text-muted: #9aa4b2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            padding: 2.5rem 1.5rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.01em;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.35rem;
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: rgba(245, 197, 24, 0.15);
+            color: var(--yellow-brand);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(245, 197, 24, 0.3);
+        }
+
+        .controls-bar {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            background: var(--card-dark);
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-dark);
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .control-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-right: 0.25rem;
+        }
+
+        button.btn {
+            background: #232833;
+            color: var(--text-main);
+            border: 1px solid #363e4f;
+            padding: 0.45rem 0.9rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        button.btn:hover {
+            background: #2f3645;
+            border-color: #4a556d;
+        }
+
+        button.btn.active {
+            background: var(--yellow-brand);
+            color: #000000;
+            font-weight: 600;
+            border-color: var(--yellow-brand);
+        }
+
+        .grid-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-dark);
+            border: 1px solid var(--border-dark);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .card-badge {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            background: #252a36;
+            color: var(--text-muted);
+        }
+
+        .stage {
+            padding: 3rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 280px;
+            position: relative;
+            transition: background 0.3s ease;
+        }
+
+        .stage.bg-dark {
+            background: #111317;
+        }
+
+        .stage.bg-light {
+            background: #ffffff;
+        }
+
+        .stage.bg-checker {
+            background-color: #1a1e27;
+            background-image: 
+                linear-gradient(45deg, #222733 25%, transparent 25%), 
+                linear-gradient(-45deg, #222733 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #222733 75%), 
+                linear-gradient(-45deg, transparent 75%, #222733 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        .stage img, .stage svg {
+            max-width: 100%;
+            height: auto;
+            max-height: 220px;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 24px rgba(0,0,0,0.25));
+            transition: transform 0.3s ease;
+        }
+
+        .stage.zoom-200 img, .stage.zoom-200 svg {
+            transform: scale(1.6);
+        }
+
+        .card-footer {
+            padding: 1.25rem 1.5rem;
+            border-top: 1px solid var(--border-dark);
+            background: rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .specs-list {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        .download-btn {
+            background: #252b38;
+            color: #ffffff;
+            border: 1px solid #3c465b;
+            padding: 0.4rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .download-btn:hover {
+            background: var(--yellow-brand);
+            color: #000;
+            border-color: var(--yellow-brand);
+        }
+
+        /* Palette Section */
+        .palette-section {
+            background: var(--card-dark);
+            border: 1px solid var(--border-dark);
+            border-radius: 16px;
+            padding: 1.75rem;
+            margin-bottom: 3rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.25rem;
+        }
+
+        .swatch-card {
+            background: #12141a;
+            border: 1px solid #282e3b;
+            border-radius: 10px;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .swatch-color {
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .swatch-info h4 {
+            font-size: 0.85rem;
+            color: #ffffff;
+            margin-bottom: 0.2rem;
+        }
+
+        .swatch-info p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: monospace;
+        }
+    </style>
+
+    <!-- BrynBrands Official Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Vercel Web Analytics & Speed Insights -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <span class="badge-pill">High-Accuracy Vector Graphics</span>
+                <h1 style="margin-top: 0.5rem;">BrynBrands Oval & Logo Suite</h1>
+                <p class="subtitle">Mathematical vector recreation from original physical badge photograph</p>
+            </div>
+            <div>
+                <a href="index.html" class="download-btn" style="background:var(--yellow-brand); color:#000; font-weight:600; padding:0.6rem 1.2rem;">Back to Main Portal &rarr;</a>
+            </div>
+        </header>
+
+        <!-- Interactive Toolbar -->
+        <div class="controls-bar">
+            <div class="control-group">
+                <span class="control-label">Stage Background:</span>
+                <button class="btn active" onclick="setBg('bg-dark')">Obsidian Dark</button>
+                <button class="btn" onclick="setBg('bg-light')">Clean White</button>
+                <button class="btn" onclick="setBg('bg-checker')">Checkerboard</button>
+            </div>
+
+            <div class="control-group" style="margin-left: auto;">
+                <span class="control-label">Zoom Scalability:</span>
+                <button class="btn active" onclick="setZoom(false)">100% Fit</button>
+                <button class="btn" onclick="setZoom(true)">160% High-Def</button>
+            </div>
+        </div>
+
+        <!-- Comparison & Vector Grid -->
+        <div class="grid-showcase">
+            <!-- 1. Standalone Oval Badge Mark -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="card-title">1. Iconic Oval Badge (Vector)</h3>
+                        <p style="font-size:0.8rem; color:var(--text-muted);">Icon / App Mark / Brand Emblem</p>
+                    </div>
+                    <span class="card-badge">SVG Vector</span>
+                </div>
+                <div class="stage bg-dark" id="stage1">
+                    <img src="brynbrands-oval-badge.svg" alt="BrynBrands Oval Badge">
+                </div>
+                <div class="card-footer">
+                    <div class="specs-list">
+                        <span>Geometry: 2.1:1 Ellipse</span>
+                        <span>Orbiting Crescents: 180° Symmetry</span>
+                    </div>
+                    <a href="brynbrands-oval-badge.svg" download class="download-btn">Download SVG</a>
+                </div>
+            </div>
+
+            <!-- 2. Complete Official Corporate Logo -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="card-title">2. Complete Official Logo (Vector)</h3>
+                        <p style="font-size:0.8rem; color:var(--text-muted);">Oval Badge + BrynBrands® Wordmark</p>
+                    </div>
+                    <span class="card-badge">SVG Vector</span>
+                </div>
+                <div class="stage bg-dark" id="stage2">
+                    <img src="brynbrands-logo.svg" alt="BrynBrands Complete Corporate Logo">
+                </div>
+                <div class="card-footer">
+                    <div class="specs-list">
+                        <span>Wordmark: Flared Display Serif</span>
+                        <span>Registered Symbol: (R) Vector</span>
+                    </div>
+                    <a href="brynbrands-logo.svg" download class="download-btn">Download SVG</a>
+                </div>
+            </div>
+
+            <!-- 3. Original Photograph (Reference) -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="card-title">3. Original Source Image</h3>
+                        <p style="font-size:0.8rem; color:var(--text-muted);">Physical sticker photograph with camera skew</p>
+                    </div>
+                    <span class="card-badge">328 × 166 PNG</span>
+                </div>
+                <div class="stage bg-dark" id="stage3">
+                    <img src="logo.png" alt="Original Logo Photo">
+                </div>
+                <div class="card-footer">
+                    <div class="specs-list">
+                        <span>Perspective Tilt: +0.48°</span>
+                        <span>Low Resolution & Paper Texture</span>
+                    </div>
+                    <span style="font-size:0.8rem; color:var(--text-muted);">Source File</span>
+                </div>
+            </div>
+
+            <!-- 4. Autographed Heritage Edition -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="card-title">4. Autographed Edition (Vector)</h3>
+                        <p style="font-size:0.8rem; color:var(--text-muted);">Vectorized Sekurutau / Bryn Taurai Mteki Signature</p>
+                    </div>
+                    <span class="card-badge">Heritage Edition</span>
+                </div>
+                <div class="stage bg-dark" id="stage4">
+                    <img src="brynbrands-logo-autographed.svg" alt="BrynBrands Autographed Logo">
+                </div>
+                <div class="card-footer">
+                    <div class="specs-list">
+                        <span>Founder: Dr. Hon. Bryn Taurai Mteki</span>
+                        <span>Vector Signature Layer</span>
+                    </div>
+                    <a href="brynbrands-logo-autographed.svg" download class="download-btn">Download SVG</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Color Specification -->
+        <div class="palette-section">
+            <h3 style="font-size: 1.15rem; color:#fff;">Extracted Corporate Color System</h3>
+            <p style="font-size: 0.85rem; color:var(--text-muted); margin-top: 0.25rem;">Harmonized Pantone / Hex values identified from the image analysis and website CSS tokens.</p>
+            
+            <div class="palette-grid">
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background:#F5C518;"></div>
+                    <div class="swatch-info">
+                        <h4>Brand Gold Yellow</h4>
+                        <p>#F5C518</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background:#DC4E58;"></div>
+                    <div class="swatch-info">
+                        <h4>Top-Right Coral Red</h4>
+                        <p>#DC4E58</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background:#4E575E;"></div>
+                    <div class="swatch-info">
+                        <h4>Bottom-Left Slate Gray</h4>
+                        <p>#4E575E</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background:#454C43;"></div>
+                    <div class="swatch-info">
+                        <h4>Wordmark Charcoal</h4>
+                        <p>#454C43</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background:#FFFFFF; border:1px solid #444;"></div>
+                    <div class="swatch-info">
+                        <h4>Separator Groove</h4>
+                        <p>#FFFFFF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setBg(bgClass) {
+            document.querySelectorAll('.stage').forEach(el => {
+                el.className = 'stage ' + bgClass;
+            });
+            event.target.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function setZoom(isZoomed) {
+            document.querySelectorAll('.stage').forEach(el => {
+                if (isZoomed) {
+                    el.classList.add('zoom-200');
+                } else {
+                    el.classList.remove('zoom-200');
+                }
+            });
+            event.target.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

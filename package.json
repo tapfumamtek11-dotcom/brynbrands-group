@@ -1,0 +1,17 @@
+{
+  "name": "brynbrands-group-ecosystem",
+  "version": "1.0.0",
+  "description": "BrynBrands Group official website, Sekurutau Gallery, and Sekurutau World Music subsite.",
+  "scripts": {
+    "start": "npx -y serve public_html -l 8080",
+    "preview": "npx -y serve public_html -l 8080"
+  },
+  "keywords": [
+    "brynbrands",
+    "sekurutau",
+    "music",
+    "gallery"
+  ],
+  "author": "BrynBrands Group",
+  "license": "UNLICENSED"
+}
