@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/gallery/css/style.css">
     <style>
         :root {
             --bg-primary: #0A0908;
@@ -157,11 +157,11 @@
     </style>
 
     <!-- BrynBrands Official Favicons -->
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="manifest" href="../site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Vercel Web Analytics & Speed Insights -->
     <script>
@@ -172,12 +172,12 @@
     <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
-    <a href="index.html" class="back-btn">← Back to Gallery</a>
+    <a href="/gallery/" class="back-btn">← Back to Gallery</a>
     <div class="slide-counter" id="counter">1 / 24</div>
 
     <div class="slideshow-container" id="slideshow">
         <div class="slide active">
-            <img id="slideImg" src="images/another.png" alt="Artwork">
+            <img id="slideImg" src="/gallery/images/another.png" alt="Artwork">
         </div>
     </div>
 
@@ -221,7 +221,7 @@
         let currentIndex = 0;
 
         function showSlide(index) {
-            slideImg.src = `images/${images[index]}`;
+            slideImg.src = `/gallery/images/${encodeURIComponent(images[index])}`;
             slideImg.alt = `Artwork ${index + 1}`;
             counter.textContent = `${index + 1} / ${images.length}`;
         }
